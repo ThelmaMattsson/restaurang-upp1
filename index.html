@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurang</title>
+    <script src="/restaurang/js/script.js" defer></script>
+    <link rel="stylesheet" href="/restaurang/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="/restaurang/images/Skärmavbild 2025-03-21 kl. 09.49.30.png" type="image/jpg">
+</head>
+<body>
+    <header>
+        <h1>DAMMVÄGEN</h1>
+    </header>
+    <!--kodblock för navigationsbar, menu-toggle-btn syns vid hamburgermenyn under 400px-->
+    <div class="inner-width">
+        <button class="menu-toggle-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+        <nav id="navigation-menu">
+            <ul>
+                <li class="nav-item-active"><a href="/index.html">HEM</a></li>
+                <li class="nav-item"><a href="/restaurang/html/meny.html">MENY</a></li>
+                <li class="nav-item"><a href="/restaurang/html/order.html">BESTÄLL</a></li>
+                <li class="nav-item"><a href="/restaurang/html/kontakt.html">BOKA BORD</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section>
+            <h2>OM OSS</h2>
+            <p>Välkommen till Dammvägen!<br>Här får du smaka på mat lagad med kärlek, precis som mormor gör det.<br>På Dammvägen serveras klassisk husmanskost, enkel men full av smak, med recept som fått högsta betyg av både barn och barnbarn.<br>Här kryddas inte så mycket, för vi tror att den äkta smaken av råvarorna räcker för att göra varje måltid till en upplevelse.<br>Välkommen hem till oss!</p>
+            <div class="omOssBild">
+                <img src="/restaurang/images/Skärmavbild 2025-03-21 kl. 09.49.30.png">
+            </div>
+            
+        </section>
+        <section class="container">
+            <h2>ÖPPETTIDER</h2>
+            <div class="tider">
+                <table>
+                    <tr>
+                        <td>Måndag</td>
+                        <td>11-22</td>
+                    </tr>
+                    <tr>
+                        <td>Tisdag</td>
+                        <td>11-22</td>
+                    </tr>
+                    <tr>
+                        <td>Onsdag</td>
+                        <td>11-22</td>
+                    </tr>
+                    <tr>
+                        <td>Torsdag</td>
+                        <td>11-22</td>
+                    </tr>
+                    <tr>
+                        <td>Fredag</td>
+                        <td>11-SENT</td>
+                    </tr>
+                    <tr>
+                        <td>Lördag</td>
+                        <td>11-SENT</td>
+                    </tr>
+                    <tr>
+                        <td>Söndag</td>
+                        <td>11-22</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5>Kontakt</h5>
+        <p>Telefon: 123 456 78 90</p>
+        <p>Mail: dammvagen1@contact.se</p>
+        <p>Dammvägen 1<br>123 45 Dammstaden</p>
+    </footer>
+</body>
+</html>

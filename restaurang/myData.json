@@ -1,0 +1,62 @@
+
+{
+    "menuItem1": "FÖRRÄTTER",
+    "förrätter": [
+        {
+            "name": "Vitlöksbröd",
+            "description": "Rostat vitlöksbröd med persilja",
+            "price": 50
+        },
+        {
+            "name": "Carpaccio",
+            "description": "Carpaccio med pinjenötter, balsamico och ruccula",
+            "price": 125
+        },
+        {
+            "name": "Grönsallad",
+            "description": "Med rädisor, tomat, gurka, sallad och fetaost",
+            "price": 65
+        }
+    ],
+    "menuItem2": "HUVUDRÄTTER",
+    "huvudrätter": [
+        {
+            "name": "Köttbullar",
+            "description": "På svenskt nötkött, med potatismos, rårörda lingon, pressgurka och gräddsås",
+            "price": 175
+        },
+        {
+            "name": "Ugnsbakad lax",
+            "description": "Serveras med kokt potatis, hollandaisesås och säsongens grönsaker",
+            "price": 185
+        },
+        {
+            "name": "Fläskfilégryta",
+            "description": "Serveras med ris, kantarellsås och säsongens grönsaker",
+            "price": 175
+        },
+        {
+            "name": "Flygande draken",
+            "description": "Kycklinggryta med champinjoner, serveras med ris och grönsallad",
+            "price": 165
+        }
+    ],
+    "menuItem3": "EFTERRÄTTER",
+    "efterrätter": [
+        {
+            "name": "Marängsviss",
+            "description": "Serveras med hemgjord chokladsås, banan, vaniljglass, citrongrädde",
+            "price": 65
+        },
+        {
+            "name": "Toscapäron",
+            "description": "Svenska ugnsbakade päron med mandeltäcke, serveras med vaniljglass",
+            "price": 55
+        },
+        {
+            "name": "Toscakaka",
+            "description": "Mjuk kaka med mandeltäcke",
+            "price": 55
+        }
+    ]
+}

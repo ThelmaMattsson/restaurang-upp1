@@ -1,0 +1,214 @@
+body {
+    font-family: "Montserrat";
+    font-weight: normal;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(164, 164, 151);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(164, 164, 151);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+/*styling för navbar*/
+.inner-width{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(104, 104, 96);
+    position: sticky;
+    top: 0;
+}
+
+.menu-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: black;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    box-shadow: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+.nav-item-active a {
+    color: rgb(172, 172, 157);
+}
+
+/*main styling*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+section {
+    border: black solid 1px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.omOssBild img {
+    max-width: 590px;
+    width: 100%;
+}
+
+.tider {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+td {
+    text-align: left;
+    
+}
+
+/*styling för menyn*/
+.menu-section ul {
+    list-style-type: none;
+    gap: 30px;
+    padding: 0;
+}
+
+.menu-item {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.menu-item.hidden {
+    display: none;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(164, 164, 151);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(104, 104, 96);
+}
+
+/* Styling for the quantity input and "add" buttons */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid rgb(164, 164, 151);
+    border-radius: 5px;
+}
+
+/*styling för formulär*/
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formElement {
+    display: block;
+    width: 100%; 
+    margin-bottom: 15px;
+}
+
+#errorMeddelande {
+    color: rgb(140, 8, 8);
+    white-space: pre-line;
+    font-size: 13px;
+}
+
+
+/*för skärmar mindre än 400px*/
+@media screen and (max-width: 400px){
+    nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+        position: sticky;
+        top: 50px;
+        left: 0px;
+        background-color: rgb(104, 104, 96);
+        flex-direction: column;
+        z-index: 100;
+        justify-content: center;
+    } 
+
+    nav.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    .menu-toggle-btn {
+        display: block;
+        padding: 3px;
+        z-index: 101;
+    } 
+}

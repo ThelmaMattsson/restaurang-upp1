@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurang</title>
+    <script src="/restaurang/js/order.js" defer></script>
+    <link rel="stylesheet" href="/restaurang/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="/restaurang/images/Skärmavbild 2025-03-21 kl. 09.49.30.png" type="image/jpg">
+</head>
+<body>
+    <header>
+        <h1>DAMMVÄGEN</h1>
+    </header>
+    <div class="inner-width">
+        <button class="menu-toggle-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+        <nav id="navigation-menu">
+            <ul>
+                <li class="nav-item"><a href="/index.html">HEM</a></li>
+                <li class="nav-item"><a href="./meny.html">MENY</a></li>
+                <li class="nav-item-active"><a href="./order.html">BESTÄLL</a></li>
+                <li class="nav-item"><a href="./kontakt.html">BOKA BORD</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <!--filterknappar-->
+        <section class="menu-section">
+            <h2>MENY</h2>
+            <div class="filter">
+                <button onclick="filterMenu('aLaCarte')">Á la Carte</button>
+                <button onclick="filterMenu('starter')">Förrätter</button>
+                <button onclick="filterMenu('main')">Varmrätter</button>
+                <button onclick="filterMenu('dessert')">Efterrätter</button>
+                <button onclick="clearFilter()">Visa alla</button>
+            </div>
+            <!--menyn hämtas in från JSON, utan lunchbuffé då den ej kan beställas via webben-->
+            <div class="menu-items">
+                <div class="menu-item starter aLaCarte">
+                    <h3 id="entrees">Loading...</h3>
+                    <ul id="menuList1">
+                    </ul>
+                </div>
+
+                <div class="menu-item main aLaCarte">
+                    <h3 id="maincourses">Loading...</h3>
+                    <ul id="menuList2">
+                    </ul>
+                </div>
+
+                <div class="menu-item dessert aLaCarte">
+                    <h3 id="desserts">Loading...</h3>
+                    <ul id="menuList3">
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="totalPris">
+            <h3>Totalpris: 0kr</h3>
+            <button>Beställ</button>
+        </section>
+    </main>
+    <footer>
+        <h5>Kontakt</h5>
+        <p>Telefon: 123 456 78 90</p>
+        <p>Mail: dammvagen1@contact.se</p>
+        <p>Dammvägen 1<br>123 45 Dammstaden</p>
+    </footer>
+</body>
+</html>

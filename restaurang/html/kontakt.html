@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurang</title>
+    <script src="/restaurang/js/script.js" defer></script>
+    <link rel="stylesheet" href="/restaurang/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="/restaurang/images/Skärmavbild 2025-03-21 kl. 09.49.30.png" type="image/jpg">
+</head>
+<body>
+    <header>
+        <h1>DAMMVÄGEN</h1>
+    </header>
+    <div class="inner-width">
+        <button class="menu-toggle-btn" onclick="toggleMenu()"><i class="fa fa-bars"></i></button>
+        <nav id="navigation-menu" class="navigation-menu">
+            <ul>
+                <li class="nav-item"><a href="/index.html">HEM</a></li>
+                <li class="nav-item"><a href="./meny.html">MENY</a></li>
+                <li class="nav-item"><a href="./order.html">BESTÄLL</a></li>
+                <li class="nav-item-active"><a href="./kontakt.html">BOKA BORD</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <!--section för form för bordsbokning, validering via javascript-->
+        <section>
+            <h2>BOKA BORD</h2>
+            <p>Fyll i formuläret nedan för att boka bord hos oss!</p>
+            <form id="bookingForm">
+                <div class="formElement">
+                    <label for="name">Namn</label>
+                    <br>
+                    <input type="text" id="name" name="guestName">
+                </div>
+                <div class="formElement">
+                    <label for="email">Epost-adress</label>
+                    <br>
+                    <input type="email" id="email" name="guestEmail">
+                </div>
+                <div class="formElement">
+                    <label for="number">Telefonnummer</label>
+                    <br>
+                    <input type="tel" id="number" name="guestNumber">
+                </div>
+                <div class="formElement">
+                    <label for="antal">Antal gäster i sällskapet</label>
+                    <br>
+                    <input type="number" id="antal" name="guestAntal">
+                </div>
+                <div class="formElement">
+                    <label for="date">När vill du besöka oss?</label>
+                    <br>
+                    <input type="datetime-local" id="date" name="guestDate">
+                </div>
+                <div class="formElement">
+                    <label for="kommentar">Övriga kommentarer</label>
+                    <br>
+                    <textarea id="kommentar" name="guestKommentar" placeholder="Allergier, behov av barnstol?"></textarea>
+                    <br>
+                    <p id="errorMeddelande"></p>
+                    <br>
+                    <button type="submit">Bekräfta bokning</button>
+                </div>            
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h5>Kontakt</h5>
+        <p>Telefon: 123 456 78 90</p>
+        <p>Mail: dammvagen1@contact.se</p>
+        <p>Dammvägen 1<br>123 45 Dammstaden</p>
+    </footer>
+</body>
+</html>
