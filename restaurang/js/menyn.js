@@ -8,7 +8,7 @@ function toggleMenu() {
 //hämta manyn från JSON
 function fetchData() {
     //fetch hämtar JSON-filen
-    fetch("/restaurang/myData.json")
+    fetch("../myData.json")
         .then(function(response) {
             return response.json();
         })

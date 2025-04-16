@@ -8,7 +8,7 @@ function toggleMenu() {
 //hämtar menyn från json och skriver den i html-element, samma som menyn men med number-input och uppdatering av totalpris
 function fetchData() {
     //Fetch hämtar JSON-filen
-    fetch("/restaurang/myData.json")
+    fetch("../myData.json")
         .then(function (response) {
             return response.json();
         })
